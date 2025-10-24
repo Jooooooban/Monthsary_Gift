@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1st Monthsary! 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+<div class="center-content">
+
+    <div id="landing-content">
+        <div class="heart-container">
+            <div class="heart-circle">
+                <img src="img\flower.png" alt="Heart" class="flower">
+            </div>
+        </div>
+        
+        <h1 class="title">Happy 1st Monthsary, Bb!</h1>
+        <p class="subtitle">I'm sorry that I can't go sayo rn. To somehow make it up to you, I made this for you!</p>
+        
+        <div id="button-container" class="button-container">
+            <button id="yes-btn" class="btn btn-yes">Okayyyy</button>
+            <button id="no-btn" class="btn btn-no">No</button>
+        </div>
+    </div>
+    <div id="sad-message" class="sad-message hidden">
+        <img src="img\tontonsad.gif" alt = "Waiting face" class="emoji-large">
+        <p>Pleaseeee! 💔</p>
+        <button id="fine-btn" class="btn btn-no">Fine</button>
+    </div>
+    </div>
+</div>
+
+    <!-- Passcode Page -->
+    <div id="passcode-page" class="page">
+        <div class="center-content">
+            <div class="passcode-container">
+            
+                <div id="passcode-content">
+                <img src="img\tontonwait.gif" alt = "wait" class="emoji-smol">
+                    <h2 class="page-title">Enter our Special Day! :> </h2>
+                    <p class="passcode-hint">MMDDYY</p>
+                    
+                    <div class="passcode-display">
+                        <div class="passcode-digit"></div>
+                        <div class="passcode-digit"></div>
+                        <div class="passcode-digit"></div>
+                        <div class="passcode-digit"></div>
+                        <div class="passcode-digit"></div>
+                        <div class="passcode-digit"></div>
+                    </div>
+                    
+                    <p id="passcode-error" class="error-message hidden">Wrong code, try again!</p>
+                    
+                    <div class="keypad">
+                        <button class="key" data-num="1">1</button>
+                        <button class="key" data-num="2">2</button>
+                        <button class="key" data-num="3">3</button>
+                        <button class="key" data-num="4">4</button>
+                        <button class="key" data-num="5">5</button>
+                        <button class="key" data-num="6">6</button>
+                        <button class="key" data-num="7">7</button>
+                        <button class="key" data-num="8">8</button>
+                        <button class="key" data-num="9">9</button>
+                        <button class="key key-empty"></button>
+                        <button class="key" data-num="0">0</button>
+                        <button class="key key-delete" id="delete-btn">⌫</button>
+                    </div>
+                </div>
+
+                <div id="passcode-loader" class="passcode-loader hidden">
+                    <span class="loading-text">Gift loading hehe</span>
+                    <span class="loading-dots">
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Gift Hub Page -->
+    <div id="gift-page" class="page">
+        <div class="center-content">
+            <h2 class="page-title blinking-text">Click Any Gift</h2>
+            
+            <p class="subtitle">just for you.</p>
+                <div class="gift-grid">
+                    <button class="gift-card" data-page="gallery" id="gallery-btn">
+                        <img src="img\cam.jpg" alt="Gallery Icon" class="gift-icon">
+                    </button>
+                    
+                    <button class="gift-card" data-page="music" id="music-btn">
+                        <img src="img\music.jpg" alt="Music Icon" class="gift-icon">
+                    </button>
+                    
+                    <button class="gift-card" id="letter-btn">
+                        <img src="img\letter.jpg" alt="Letter Icon" class="gift-icon">
+                    </button>
+                        
+                    <button class="gift-card" data-page="jar" id="jar-btn">
+                        <img src="img\jar.jpg" alt="Jar Icon" class="gift-icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Page -->
+    <div id="gallery-page" class="page page-with-back">
+        <button class="back-btn">← Back</button>
+        <h2 class="page-title"> Memories</h2>
+        
+        <div class="gallery-grid">
+            <img src="img\us1.jpg" alt="Memory 1" class="gallery-photo">
+            <img src="img\us3.jpg" alt="Memory 2" class="gallery-photo">
+            <img src="img\us4.jpg" alt="Memory 3" class="gallery-photo">
+            <img src="img\us2.jpg" alt="Memory 4" class="gallery-photo">
+        </div>
+    </div>
+
+    <!-- Music Page -->
+    <div id="music-page" class="page page-with-back">
+        <button class="back-btn">← Back</button>
+        
+        <div class="music-container">
+            <h2 class="page-title">Our Song </h2>
+            <p class="subtitle">reminds me of us</p>
+            
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/06IkOr83qPqa3yYvrIjgxp?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            
+        </div>
+    </div>
+
+    <!-- Jar Page -->
+
+    <div id="jar-page" class="page page-with-back">
+        <button class="back-btn">← Back</button>
+        <h2 class="page-title">A Jar of Hearts</h2>
+        <p class="subtitle">Click a heart to read a message...</p>
+        
+        <div class="jar-container">
+            <button 
+                class="heart-btn heart-1 heart-pink" 
+                data-message="Love you more than last month.">
+            </button>
+            <button 
+                class="heart-btn heart-2 heart-blue" 
+                data-message="Time flies when I'm with you">
+            </button>
+            <button 
+                class="heart-btn heart-3 heart-green" 
+                data-message="I am the happiest when I'm with you.">
+            </button>
+            <button 
+                class="heart-btn heart-4 heart-yellow" 
+                data-message="Every month is better with you in it.">
+            </button>
+            <button 
+                class="heart-btn heart-5 heart-pink" 
+                data-message="I am so lucky to have you.">
+            </button>
+            <button 
+                class="heart-btn heart-6 heart-blue" 
+                data-message="You're still and will always be my favorite.">
+            </button>
+            <button 
+                class="heart-btn heart-7 heart-violet" 
+                data-message="Thank you for being in my life.">
+            </button>
+            <button 
+                class="heart-btn heart-8 heart-purple" 
+                data-message="Every day with you is a gift.">
+            </button>                        
+            <button 
+                class="heart-btn heart-9 heart-red" 
+                data-message="I love you so much.">
+            </button>
+            </div>
+    </div>
+
+    <!-- Love Letter Modal -->
+    <div id="letter-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-btn" id="close-modal">×</button>
+            
+            <div class="letter-header">
+                <div class="emoji-large">💌</div>
+                <h3>For You</h3>
+            </div>
+            
+            <div class="letter-body">
+                <p>My Dearest Bb,</p>
+                <p>It’s only been a month since we officially became a couple, yet it still feels so surreal — really, char. We’ve been committed and calling each other “mine” for a while now, but knowing that this time it’s official just hits differently.</p>
+                <p>After months of talking and getting to know each other, finally reaching this point means so much to me, even though hindi masyadong halata. When I first heard and read those three words from you, I felt genuinely happy, and to be honest, that feeling still hasn’t faded.</p>
+                <p>To be honest, I thought that when you finally accepted me, things would somehow change. I didn’t know what exactly, but I expected something would. Yet ever since you became my partner, aside from being extra happy and thankful, nothing really changed, and that’s what makes it so special. Because we’ve always been like this: caring for each other, understanding one another, and loving in our own genuine way.</p>
+                <p>And now that it’s official, it just feels even more right, more natural, like it was always meant to be.</p>
+                <p>Anyway, this is already too long, but I just want to say thank you, for choosing me, for letting me love you, and for being the beautiful person that you are.</p>
+                <p>You make me the happiest every day, and I’m so grateful to have you. Here’s to many more months, years, and memories together.</p>
+                <p class="italic">I love you so much.💕</p>
+                <p class="signature">Forever yours,<br>Jhouvann</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="letter-modal" class="modal hidden">
+    </div>
+
+    <div id="heart-message-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-btn" id="close-heart-modal">×</button>
+            <div class="letter-body">
+                <p id="heart-message-text" class="heart-message-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
